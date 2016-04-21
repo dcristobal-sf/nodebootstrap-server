@@ -3,9 +3,7 @@ var express = require('express')
   , log     = require('metalogger')()
   , cluster = require('cluster')
   , CONF    = require('config')
-  , http    = require('http')
-  , sticky = require('sticky-session');
-
+  , http    = require('http');
 
 exports = module.exports;
 
@@ -43,7 +41,7 @@ exports.setup = function(initapp, callback) {
 
   if (is_http_thread) {
     http = http.createServer(app);
-    sticky.listen(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || CONF.app.port);
+    http.listen(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || CONF.app.port);
   }
 
   // If we are not running a cluster at all:
