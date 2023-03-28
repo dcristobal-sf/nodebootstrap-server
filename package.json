@@ -1,6 +1,6 @@
 {
   "name": "nodebootstrap-server",
-  "version": "1.9.1",
+  "version": "1.16.0",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -13,16 +13,16 @@
     "url": "https://github.com/inadarei/nodebootstrap-server"
   },
   "engines": {
-    "node": ">=0.8.8"
+    "node": ">=4.0.0"
   },
   "dependencies": {
-    "body-parser": "1.x",
-    "config": "*",
-    "connect-multiparty": "^2.0.0",
-    "express": "4.x",
-    "metalogger": "*",
-    "method-override": "2.x",
-    "nodebootstrap-clustering": "*",
+    "body-parser": "^1.18.2",
+    "config": "1.19.2",
+    "connect-multiparty": "^2.1.0",
+    "express": "^4.16.2",
+    "metalogger": "2.2.1",
+    "method-override": "2.3.10",
+    "nodebootstrap-clustering": "^2.0.0",
     "qs": "^6.2.4",
     "response-time": "2.x",
     "yaml": "*"
