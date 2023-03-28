@@ -23,7 +23,7 @@
     "metalogger": "*",
     "method-override": "2.x",
     "nodebootstrap-clustering": "*",
-    "qs": "^5.2.0",
+    "qs": "^6.2.4",
     "response-time": "2.x",
     "yaml": "*"
   }
